@@ -94,6 +94,7 @@
             this.btcong.TabIndex = 6;
             this.btcong.Text = "Cộng";
             this.btcong.UseVisualStyleBackColor = true;
+            this.btcong.Click += new System.EventHandler(this.btcong_Click);
             // 
             // Form1
             // 

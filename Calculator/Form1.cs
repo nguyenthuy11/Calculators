@@ -21,5 +21,14 @@ namespace Calculator
         {
 
         }
+
+        private void btcong_Click(object sender, EventArgs e)
+        {
+            int a, b, c;
+            a=int.Parse(txta.Text);
+            b=int.Parse(txtb.Text);
+            c = a + b;
+            txtkq.Text = c.ToString();
+        }
     }
 }
