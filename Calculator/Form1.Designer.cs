@@ -35,6 +35,7 @@
             this.txtkq = new System.Windows.Forms.TextBox();
             this.txtb = new System.Windows.Forms.TextBox();
             this.btcong = new System.Windows.Forms.Button();
+            this.bttru = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -96,11 +97,22 @@
             this.btcong.UseVisualStyleBackColor = true;
             this.btcong.Click += new System.EventHandler(this.btcong_Click);
             // 
+            // bttru
+            // 
+            this.bttru.Location = new System.Drawing.Point(36, 152);
+            this.bttru.Name = "bttru";
+            this.bttru.Size = new System.Drawing.Size(75, 23);
+            this.bttru.TabIndex = 7;
+            this.bttru.Text = "Trừ";
+            this.bttru.UseVisualStyleBackColor = true;
+            this.bttru.Click += new System.EventHandler(this.bttru_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(597, 256);
+            this.Controls.Add(this.bttru);
             this.Controls.Add(this.btcong);
             this.Controls.Add(this.txtb);
             this.Controls.Add(this.txtkq);
@@ -110,6 +122,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,6 +137,7 @@
         private System.Windows.Forms.TextBox txtkq;
         private System.Windows.Forms.TextBox txtb;
         private System.Windows.Forms.Button btcong;
+        private System.Windows.Forms.Button bttru;
     }
 }
 
