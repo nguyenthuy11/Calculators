@@ -25,10 +25,13 @@ namespace Calculator
         private void btcong_Click(object sender, EventArgs e)
         {
             int a, b, c;
-            a=int.Parse(txta.Text);
-            b=int.Parse(txtb.Text);
-            c = a + b;
-            txtkq.Text = c.ToString();
+            if (txta.Text !=String.Empty && txtb.Text != String.Empty)
+            {
+                a = int.Parse(txta.Text);
+                b = int.Parse(txtb.Text);
+                c = a + b;
+                txtkq.Text = c.ToString(); 
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
